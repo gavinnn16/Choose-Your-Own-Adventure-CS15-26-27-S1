@@ -1,16 +1,12 @@
 user_choice = None
 
-story = """You wake up on a dirty mattress in a dark, creepy bedroom. 
+story = """You wake up in a dark room with a bad headache.
 
-Your head is pounding. You have five days to escape. 
+Footsteps and a dragged bat approach. Granny is coming!
 
-You hear heavy footsteps and the dragging of a baseball bat coming up the stairs. 
-
-Granny is home, and she knows you're awake.
-
-A : Hide under the dusty bed.
+A : Hide under the bed.
 OR
-B : Sneak out the bedroom door into the hallway.
+B : Sneak out to the hall.
 """
 
 print(story)
@@ -18,166 +14,124 @@ print(story)
 user_choice = input().lower()
 
 if user_choice == "a":
-    story = """You slide under the bed just as the door creeps open. 
+    story = """You hide under the bed. Granny steps inside, looks around, but misses you.
 
-Granny limps into the room, looking around with her crazy white eyes. 
-
-She mutters, "I see you..." but she's looking the wrong way.
-
-A : Stay perfectly still and hold your breath.
+A : Stay quiet and don't move.
 OR
-B : Try to quietly crawl out from under the bed towards the window.
+B : Crawl toward the window.
 """
     print(story)
 
     user_choice = input().lower()
 
     if user_choice == "a":
-        story = """She grunts, gives up, and walks out of the room, leaving the door open. 
+        story = """Granny walks out and leaves the door open. You crawl out safely.
 
-You crawl out. The coast is temporarily clear. 
-
-You can either make a break for the main exit or look for something to defend yourself.
-
-A : Sprint downstairs to try and unlock the front door.
+A : Run downstairs to unlock the door.
 OR
-B : Search her creepy closet for a weapon.
+B : Search the closet for a weapon.
 """
         print(story)
 
         user_choice = input().lower()
 
         if user_choice == "a":
-            story = """You sprint down the stairs like your life depends on it! 
-
-You rip the wooden planks off the front door, unlock the padlock, and burst out into the woods!
+            story = """You sprint downstairs, break the locks, and escape!
 
 YOU ESCAPED! 
 THE END
 """
             print(story)
         else:
-            story = """You open the closet and find a loaded crossbow! 
+            story = """You find a crossbow, but knock over a vase. CRASH!
 
-But as you grab it, you knock over an old vase. CRASH! 
-
-Granny instantly teleports behind you and swings her bat. GAME OVER.
+Granny appears behind you and swings her bat. GAME OVER.
 
 THE END
 """
             print(story)
 
     else:
-        story = """You slowly crawl toward the window, but the floorboards squeak! 
+        story = """You crawl toward the window, but the floor squeaks! Granny turns around.
 
-Granny snaps her head toward you and raises her bloody bat. 
-
-You have a split second to react.
-
-A : Grab a nearby lamp and smash the window to jump.
+A : Smash the window and jump out.
 OR
-B : Dive into the wooden wardrobe next to the bed.
+B : Hide inside the wardrobe.
 """
         print(story)
 
         user_choice = input().lower()
 
         if user_choice == "a":
-            story = """You smash the glass and jump out the second-story window! 
+            story = """You smash the glass and jump out! You hurt your leg, but crawl away safely.
 
-You break your leg on the grass below, but you manage to crawl away into the fog before she catches you.
-
-YOU ESCAPED (barely).
+YOU ESCAPED!
 THE END
 """
             print(story)
         else:
-            story = """You dive into the wardrobe and shut the door. 
-
-Granny walks slowly over to the wardrobe, chuckles, and rips the doors open. 
-
-There's no way out. GAME OVER.
+            story = """You hide in the wardrobe, but Granny opens the door and catches you. GAME OVER.
 
 THE END
 """
             print(story)
 
 else:
-    story = """You tip-toe out into the dark hallway. 
+    story = """You step into the hallway. Granny is downstairs in the kitchen.
 
-You can hear Granny downstairs in the kitchen chopping meat. 
-
-You need to get downstairs, but the stairs are notoriously squeaky.
-
-A : Risk it and sneak down the squeaky stairs.
+A : Sneak down the squeaky stairs.
 OR
-B : Duck into the bathroom to look for the car keys.
+B : Check the bathroom for keys.
 """
     print(story)
 
     user_choice = input().lower()
 
     if user_choice == "a":
-        story = """You take one step and... CREAAAK! 
+        story = """The stairs squeak loud! Granny hears you and runs over.
 
-Granny screams from the kitchen and starts running toward the stairs. 
-
-She's fast when she's pissed off!
-
-A : Sprint past her towards the garage.
+A : Dash past her into the garage.
 OR
-B : Panic and run back upstairs.
+B : Run back upstairs.
 """
         print(story)
 
         user_choice = input().lower()
 
         if user_choice == "a":
-            story = """You dodge her bat swing by an inch, slide into the garage, and lock the door! 
-
-You hop into her rusty car, hotwire it, and smash straight through the garage door!
+            story = """You dodge her, get into the car, and crash through the garage door!
 
 YOU ESCAPED!
 THE END
 """
             print(story)
         else:
-            story = """You try to run back up, but you trip on the top step! 
-
-You fall backwards, right into one of Granny's hidden bear traps. GAME OVER.
+            story = """You run back up, trip, and hit a trap. GAME OVER.
 
 THE END
 """
             print(story)
 
     else:
-        story = """You sneak into the bloody bathroom and look in the toilet. 
+        story = """You find a key in the bathroom, but Granny is coming!
 
-Bingo. The blue padlock key is sitting at the bottom of the bowl. 
-
-You grab it, but you hear Granny coming up the stairs!
-
-A : Squeeze through the bathroom window onto the roof.
+A : Climb out the bathroom window to the roof.
 OR
-B : Run to the secret passage hidden behind the boxes in the hall.
+B : Run into the secret wall passage.
 """
         print(story)
 
         user_choice = input().lower()
 
         if user_choice == "a":
-            story = """You slide out onto the roof just as she busts the bathroom door down! 
-
-You slide down the shingles, drop to the grass, and sprint to the front gate. 
+            story = """You climb onto the roof, drop down safely, and run away!
 
 YOU ESCAPED!
 THE END
 """
             print(story)
         else:
-            story = """You dive into the secret passage and slide down a pipe into the basement. 
-
-Unfortunately, this is where Granny keeps her giant pet spider. You become its dinner. GAME OVER.
+            story = """The passage leads to the basement, right into a giant spider web. GAME OVER.
 
 THE END
 """
